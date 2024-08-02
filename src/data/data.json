@@ -49,8 +49,24 @@
       "img": "img/products/reçeller-marmelatlar.jpg"
     },
     {
+      "title": "Doğal Macunlar ve Püreler",
+      "img": "img/products/püreler.jpg"
+    },
+    {
+      "title": "Soslar-Koruyucular",
+      "img": "img/products/soslar-koruyucular.jpg"
+    },
+    {
+      "title": "Doğal-İçecekler",
+      "img": "img/products/doğal-içecekler.jpg"
+    },
+    {
       "title": "Baharatlar",
       "img": "img/products/baharatlar.jpg"
+    },
+    {
+      "title": "Diğer Ürünler",
+      "img": "img/products/diğer-ürünler.jpg"
     }
   ],
   "Services": [

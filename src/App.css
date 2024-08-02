@@ -1,4 +1,637 @@
-/* Services İçin Genel Ayarlar */
+/* Logo konteyneri */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Sol tarafa hizalayın */
+}
+
+/* Logo metni */
+.logo-text {
+  font-size: 36px; /* Yazı boyutunu artırın */
+  font-weight: 700; /* Yazı kalınlığını artırın */
+  color: #fff; /* Yazı rengini beyaz yapın */
+  text-transform: uppercase; /* Yazıyı büyük harfle yapın */
+  letter-spacing: 3px; /* Harfler arasındaki boşluğu artırın */
+  padding: 15px 25px; /* Padding ile etrafında daha fazla boşluk bırakın */
+  background: linear-gradient(
+    45deg,
+    #007bff,
+    #00c6ff
+  ); /* Arka planı gradient yapın */
+  border-radius: 8px; /* Köşeleri daha yuvarlak yapın */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge ekleyin */
+  margin-top: 10px; /* Daha az üst margin */
+  transition: all 0.3s ease; /* Geçiş efektleri ekleyin */
+  margin-top: 35px;
+  margin-left: -90px;
+}
+
+.logo-text:hover {
+  background: linear-gradient(
+    45deg,
+    #00c6ff,
+    #007bff
+  ); /* Hover durumunda gradienti değiştirin */
+  transform: scale(1.05); /* Hover durumunda biraz büyütün */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Hover durumunda gölgeyi artırın */
+}
+
+/* Responsive ayarlar */
+
+/* 768px ve daha küçük ekranlar için stil */
+@media (max-width: 768px) {
+  .logo-container {
+    justify-content: flex-end; /* Logoyu sağ köşeye hizalayın */
+  }
+  .logo-text {
+    font-size: 28px; /* Küçültülmüş yazı boyutu */
+    padding: 10px 20px; /* Küçültülmüş padding */
+    margin-top: 10px; /* Üst boşluk */
+    margin-left: 0; /* Sol boşluk yok */
+    margin-right: 0; /* Sağ boşluk yok */
+    animation: slideToRight 0.5s ease-out forwards; /* Animasyon */
+  }
+}
+
+/* Ekran genişliği 576px ve daha küçük olduğunda */
+@media (max-width: 576px) {
+  .logo-text {
+    font-size: 24px; /* Daha küçük yazı boyutu */
+    padding: 8px 16px; /* Daha küçük padding */
+  }
+}
+
+/* Animasyon tanımları */
+@keyframes slideToRight {
+  from {
+    transform: translateX(-100%); /* Logo ekranın solundan gelir */
+    opacity: 0; /* Başlangıçta görünürlük yok */
+  }
+  to {
+    transform: translateX(0); /* Logo sağa doğru kayar ve yerinde olur */
+    opacity: 1; /* Tamamen görünür */
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333; /* Navbar arka plan rengini ayarlayın */
+}
+
+/* Navbar linkleri */
+.navbar-nav > li > a {
+  color: #fff; /* Link rengini beyaz yap */
+}
+
+.navbar-nav > li > a:hover {
+  color: #ddd; /* Hover durumunda renk değişikliği */
+}
+
+/* Navbar toggler */
+.navbar-toggle {
+  border: none; /* Toggler butonunun kenarlığını kaldır */
+}
+
+.icon-bar {
+  background-color: #fff; /* Toggler ikonlarının rengini beyaz yap */
+}
+
+/* Navbar Header */
+.navbar-header {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-top: -40px;
+  padding-left: -50px;
+}
+.navbar-toggle {
+  border: none; /* Buton kenarlığını kaldır */
+}
+.navbar-nav > li > .dropdown-menu {
+  display: none; /* Varsayılan olarak gizli */
+}
+
+.navbar-nav > li:hover > .dropdown-menu {
+  display: block; /* Üzerine gelindiğinde göster */
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border: none;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+  color: #333;
+  display: block;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #f8f9fa;
+  color: #007bff;
+}
+
+.navbar-nav > li > a {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar-nav > li > a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.navbar-nav > li > a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Values */
+#values {
+  padding: 60px 0;
+  background: #f9f9f9;
+  position: relative;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+/* Responsive adjustments for values section */
+@media (max-width: 768px) {
+  .values-content {
+    flex-direction: column; /* Stack image and details vertically */
+  }
+
+  .values-image {
+    height: 50vh; /* Reduce image height for smaller screens */
+    max-height: none; /* Remove max-height constraint */
+  }
+
+  .values-image img {
+    height: auto; /* Ensure image maintains aspect ratio */
+    max-height: none; /* Remove max-height constraint */
+  }
+
+  .values-details {
+    flex: 1 1 auto; /* Allow details section to adjust automatically */
+    margin-top: 20px; /* Add space above details on small screens */
+  }
+
+  .values-overlay h3 {
+    font-size: 24px; /* Smaller font size for small screens */
+  }
+
+  .values-overlay p {
+    font-size: 16px; /* Smaller font size for small screens */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .values-overlay h3 {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .values-overlay p {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .section-title h2 {
+    font-size: 28px; /* Adjust section title font size */
+  }
+
+  .section-title p {
+    font-size: 16px; /* Adjust description font size */
+  }
+}
+
+/* Values content container */
+.values-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Image styling */
+.values-image {
+  flex: 1 1 50%;
+  position: relative;
+  height: 100vh;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.values-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Constrain image to container */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay for text */
+.values-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 8px;
+}
+
+.values-overlay h3 {
+  font-size: 40px; /* Larger font size for visibility */
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.values-overlay p {
+  font-size: 24px; /* Larger font size for visibility */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Values Details Styling */
+.values-details {
+  flex: 1 1 50%;
+}
+
+.values-details details {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content does not overflow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.values-details summary {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+  padding: 10px;
+  background-color: #f7f7f7; /* Light background for summary */
+  border-bottom: 1px solid #ddd;
+}
+
+.values-details summary:hover {
+  color: #007bff;
+}
+
+.values-details details[open] {
+  background-color: #e6f4ea; /* Light green background when open */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+}
+
+.values-details details[open] summary::after {
+  content: "▲";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.values-details details:not([open]) summary::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.values-details p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+/* Tags section */
+.values-tags {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.values-tags h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.values-tags ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.values-tags li {
+  margin-bottom: 10px;
+}
+
+.values-tags .tag-item {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.values-tags .tag-item:hover {
+  text-decoration: underline;
+}
+
+/* Values menu */
+.values-menu {
+  margin-top: 40px;
+}
+
+.values-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.values-menu li {
+  margin-bottom: 10px;
+}
+
+.values-menu .menu-item {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.values-menu .menu-item:hover {
+  text-decoration: underline;
+}
+
+#values footer {
+  background: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#values .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Footer Menu */
+#values .footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 15px;
+}
+
+#values .footer-menu li {
+  margin-bottom: 10px;
+}
+
+#values .footer-item {
+  background: #0056b3; /* Slightly darker blue for the box */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#values .footer-item:hover {
+  background: #003d7a; /* Darker blue on hover */
+  text-decoration: none;
+  transform: translateY(-2px); /* Slightly lift the box */
+}
+/* Globia Group Section */
+#globia-group {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+#globia-group .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#globia-group .section-title h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#globia-group .content-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+#globia-group .box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+#globia-group .box p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+#globia-group .img-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#globia-group .arrow-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#globia-group .arrow-wrapper .fa-arrow-down {
+  font-size: 24px;
+  color: #007bff;
+  cursor: pointer;
+  animation: bounce 1s infinite;
+}
+/* Globia Group Menu */
+.gloia-menu {
+  margin-top: 30px;
+}
+
+.footer-globia {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-globia li {
+  margin: 10px 0;
+}
+
+.footer-globia a {
+  color: #007bff; /* Link rengi */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-globia a:hover {
+  color: #0056b3; /* Hover rengini ayarlayın */
+}
+
+/* Globia Group Section Styles */
+
+/* Globia Group Background */
+#globia-group {
+  padding: 60px 0;
+  background: url("/public/img/globia-group.jpg") no-repeat center center;
+  background-size: cover; /* Resmi tüm ekranı kaplayacak şekilde ayarlar */
+  color: #fff; /* Yazı rengini beyaz yaparak arka planla kontrast sağlar */
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #fff; /* Başlık rengini beyaz yapar */
+}
+
+.content-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.box {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Kutuların arka planını hafif şeffaf koyu yapar */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+  box-sizing: border-box;
+  color: #fff; /* İçerik kutularındaki yazıları beyaz yapar */
+}
+
+.box p {
+  font-size: 16px;
+  color: #fff; /* Paragraf yazı rengini beyaz yapar */
+  line-height: 1.6;
+}
+
+.arrow-wrapper {
+  margin-top: 30px;
+}
+
+.arrow-wrapper .fa-arrow-down {
+  font-size: 24px;
+  color: #fff; /* Ok işaretinin rengini beyaz yapar */
+  cursor: pointer;
+  animation: bounce 1s infinite;
+}
+
+.gloia-menu {
+  margin-top: 30px;
+}
+
+.footer-globia {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-globia li {
+  margin: 10px 0;
+}
+
+.footer-globia a {
+  color: #fff; /* Link rengini beyaz yapar */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-globia a:hover {
+  color: #ddd; /* Hover durumunda link rengini açar */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 #services {
   padding: 20px 0;
 }
@@ -75,7 +708,6 @@
   }
 
   #team,
-  #contact,
   #footer {
     width: 111%;
   }
@@ -491,7 +1123,7 @@
 }
 
 #media .blog-post {
-  background: #fff; /* Arka plan rengi */
+  background: rgb(95, 89, 255); /* Arka plan rengi */
   border-radius: 8px; /* Kenarları yuvarlatma */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
   overflow: hidden; /* Taşmaları önlemek için */
@@ -506,8 +1138,7 @@
 
 #media .blog-img {
   width: 100%; /* Resmin genişliği */
-  height: 200px; /* Resmin yüksekliği */
-  object-fit: cover; /* Resmi kapsama */
+  height: auto; /* Resmin yüksekliği */
   transition: transform 0.3s ease-in-out; /* Hover efekti için geçiş */
 }
 
@@ -522,12 +1153,12 @@
 #media .blog-content h3 {
   font-size: 24px; /* Başlık font boyutu */
   margin-bottom: 15px; /* Başlık altındaki boşluk */
-  color: #333; /* Başlık rengi */
+  color: white; /* Başlık rengi */
 }
 
 #media .blog-content p {
   font-size: 16px; /* Açıklama font boyutu */
-  color: #666; /* Açıklama rengi */
+  color: white; /* Açıklama rengi */
   line-height: 1.6; /* Satır yüksekliği */
   margin-bottom: 15px; /* Açıklama altındaki boşluk */
 }
@@ -535,14 +1166,15 @@
 #media .blog-date {
   display: block;
   font-size: 14px; /* Tarih font boyutu */
-  color: #999; /* Tarih rengi */
+  color: white; /* Tarih rengi */
   margin-top: 10px; /* Tarih üstündeki boşluk */
 }
 
 /* Ekran genişliği 767px ve altı için responsive ayarlar */
 @media (max-width: 767px) {
   #media .blog-post {
-    width: 100%; /* Mobilde tüm genişliği kapla */
+    width: 100%;
+    height: auto; /* Mobilde tüm genişliği kapla */
     max-width: 100%; /* Maksimum genişlik ayarla */
   }
 
@@ -561,4 +1193,386 @@
   #media .blog-date {
     font-size: 12px; /* Mobil için tarih font boyutu */
   }
+}
+/* Media için genel stiller */
+#media .blog-post {
+  margin-bottom: 30px;
+}
+
+#media .blog-post-inner {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+#media .blog-post-inner:hover {
+  transform: translateY(-5px);
+}
+
+#media .blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#media .blog-content {
+  padding: 20px;
+}
+
+#media .blog-date {
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Yeni Blog Yazıları */
+#media .row {
+  display: flex;
+  align-items: flex-start; /* Üst hizalama */
+}
+
+#media .col-md-8 {
+  flex: 1; /* Esneklik ayarı */
+}
+
+#media .col-md-4 {
+  flex: 0 0 300px; /* Sabit genişlik, gerektiğinde ayarlanabilir */
+  max-width: 300px; /* Maksimum genişlik */
+  display: flex;
+  justify-content: flex-end; /* Sağ tarafa hizala */
+}
+
+#media .new-blogs {
+  background: rgb(95, 89, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#media .new-blogs h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#media .new-blogs p {
+  color: white;
+}
+
+#media .social-icons {
+  margin-top: 20px;
+}
+
+#media .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+#media .social-icons a:hover {
+  color: #007bff;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 767px) {
+  #media .row {
+    flex-direction: column;
+  }
+
+  #media .col-md-4 {
+    margin-top: 30px; /* Mobile düzenleme */
+    flex: 1; /* Esneklik ayarı */
+    max-width: none; /* Maksimum genişlik ayarını kaldır */
+  }
+
+  #media .social-icons {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+#contact .section-title {
+  margin-bottom: 30px;
+}
+#contact .section-title p {
+  font-size: 16px;
+  color: #333;
+  background-color: #f0f8ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#contact .form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+#contact .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#contact .btn-custom {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact .btn-custom:hover {
+  background-color: #0056b3;
+}
+
+#contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info h3 {
+  font-size: 24px; /* Başlık boyutu */
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 18px; /* Metin boyutu */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info ul li i {
+  font-size: 24px; /* İkon boyutu */
+  margin-right: 10px;
+  color: #007bff; /* İkon rengi */
+}
+
+.contact-info ul li i.fa-map-marker {
+  color: orange; /* Örneğin, harita işaretçisinin rengini değiştirmek için */
+}
+
+.contact-info ul li i.fa-phone {
+  color: green; /* Telefon işaretçisinin rengini değiştirmek için */
+}
+
+.contact-info ul li i.fa-envelope-o {
+  color: #dc3545; /* E-posta işaretçisinin rengini değiştirmek için */
+}
+
+#contact .social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .social li {
+  margin: 0 10px;
+}
+
+#contact .social a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+#contact .social a:hover {
+  color: #007bff;
+}
+
+#footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+.success-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: green;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.form-group input,
+.form-group textarea {
+  margin-bottom: 15px;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.card-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Kartların yan yana dizilmesini sağlar */
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid #6372ff; /* Sitenin tonunda kenar çizgisi */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px; /* Kartlar arasına boşluk ekledik */
+  width: 100%; /* Kartların genişliğini büyüttük */
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #007bff transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(10px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px; /* Resimlerin yüksekliğini sabitledik */
+  object-fit: cover; /* Resimlerin oranını korumak için object-fit kullandık */
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-title {
+  font-size: 1.5em; /* Başlıkların büyüklüğünü artırdık */
+  margin-bottom: 4rem;
+}
+
+.card-text {
+  font-size: 1.2em; /* Açıklama yazılarını büyüttük */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+  transform: translateY(0);
+  padding: 10px;
+}
+
+.card-title,
+.card-text {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  transform: scale(1.2);
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.language-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.language-select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }

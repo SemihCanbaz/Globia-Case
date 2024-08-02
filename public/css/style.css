@@ -72,7 +72,7 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 10px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -131,6 +131,7 @@ hr {
 }
 .navbar-toggle {
   border-radius: 0;
+  padding-top: 40px;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -206,15 +207,16 @@ a:focus,
 /* Header Section */
 .intro {
   display: table;
+  position: relative;
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: cover; /* Resmin tamamını kaplamasını sağlıyoruz */
+  background-position: center top; /* Resmi yukarı doğru kaydırıyoruz */
+  transform: scale(0.9); /* Resmi küçültüyoruz */
 }
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
