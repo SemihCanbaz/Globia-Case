@@ -1,54 +1,61 @@
 {
   "Header": {
-    "title": "For you, For Life",
-    "paragraph": ""
+    "title": "We are a Landing Page",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
   },
   "About": {
-    "paragraph": "Sağlıklı, lezzetli ve sürdürülebilir gıdayı, tüm insanlar ve topluluklar için ulaşılabilir kılmak amacıyla çalışan bir gıda şirketiyiz. Dünya çapında, sofralarına konuk olduğumuz milyonlarca tüketicimizin daha sağlıklı, daha kaliteli, daha lezzetli balık ile beslenmesini sağlamak amacıyla tutkuyla çalışıyoruz.",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "Why": [
-      "Taze ve Güvenilir Ürünler",
-      "Global Erişim",
-      "Sağlık ve Beslenme",
-      "Tutku ve Adanmışlık"
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
     ],
     "Why2": [
-      "Güvenilirlik ve Deneyim",
-      "Çevre Dostu Uygulamalar",
-      "Yenilikçi Yaklaşım",
-      "Müşteri Memnuniyeti"
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
     ]
   },
-  "GetToKnowUs": [],
-  "Products": [
+  "Gallery": [
     {
-      "title": "Bakliyatlar",
-      "img": "img/products/bakliyatlar.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Kurutulmuş-Meyveler",
-      "img": "img/products/kurutulmuş-meyveler.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Çerezler",
-      "img": "img/products/çerezler.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
     },
     {
-      "title": "Yağlar-Sirkeler-Pekmez",
-      "img": "img/products/yağlar-sirkeler-pekmez.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
     },
     {
-      "title": "Turşu-Fermente Ürünler",
-      "img": "img/products/turşu-fermenteürünler.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Kurutulmuş-Sebzeler",
-      "img": "img/products/kurutulmuş-sebzeler.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
     },
     {
-      "title": "Reçeller Marmelatlar",
-      "img": "img/products/reçeller-marmelatlar.jpg"
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
     },
     {
+<<<<<<< HEAD
       "title": "Doğal Macunlar ve Püreler",
       "img": "img/products/püreler.jpg"
     },
@@ -67,53 +74,132 @@
     {
       "title": "Diğer Ürünler",
       "img": "img/products/diğer-ürünler.jpg"
+=======
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+>>>>>>> parent of eb51822 (Last-Design)
     }
   ],
   "Services": [
     {
-      "img": "img/services/services-pivoras.jpg",
-      "name": "Pivoras",
-      "text": "Pivoras, gıda mühendislerinin kontrolünde organik, doğal ve taze ürünler üreten bir marka. Kuru gıdadan pekmeze, reçelden zeytine ve bakliyatlara kadar, sağlıklı bir mutfakta bulunması gereken birçok yerli, organik ve doğal ürünü müşterilerine sunuyor."
+      "icon": "fa fa-wordpress",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "img": "img/services/services-sultanova.jpg",
-      "name": "Sultanova",
-      "text": "Sultanova, iyi tarım uygulamalarıyla üreten ve aldıkları sertifika ve belgeler ile ne kadar özenli ve ciddi olduklarını resmiyete dökmüş üreticilerin, organik gıda, organik ve doğal içerikler ile üretilmiş ürünlerini, Globia kalite politikalarına uygun olarak sizlere sunuyor."
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "img": "img/services/services-necibe.jpg",
-      "name": "Necibe",
-      "text": "Farklı iklimlerin yaşandığı, verimli topraklarla dolu Anadolu’nun benzersiz coğrafyasında, en sağlıklı, en taze, en doğal sebze ve meyveleri yetiştiriyor; topluyor; en sağlıklı koşullarda üretiyor. İyi tarım uygulamaları ve gıda güvenliği standartları ile sizlerin en iyi tarım ürünlerini güvenle tüketmenizi, gelecek nesillerin sağlıklı beslenmesini ve dünyamızdaki tarım arazilerinin daha verimli ve üretken olmasını sağlıyor."
+      "icon": "fa fa-cloud-download",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
-  "Sustainability": [
+  "Testimonials": [
     {
-      "title": "Sustainability",
-      "img": "/img/sustainability-img.jpg",
-      "text": "Globia olarak, sürdürülebilirlik ilkelerine bağlı bir işletme olarak faaliyet gösteriyoruz. Şirketimiz, çevresel, ekonomik ve sosyal alanlarda sürdürülebilirlik hedeflerine ulaşmayı ve gelecek nesillere daha iyi bir dünya bırakmayı amaçlamaktadır."
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
     },
     {
-      "title": "Sustainability",
-      "img": "/img/sustainability-img2.jpg",
-      "text": "Çevresel sorunların farkındayız ve çevre dostu bir işletme olmak için çaba sarf ediyoruz. Üretim süreçlerimizi ve faaliyetlerimizi çevreye zarar vermeden yürütmek için çevresel etkilerimizi en aza indirecek teknolojileri kullanıyoruz. Enerji ve su tasarrufu sağlamak, atık ve emisyon miktarını azaltmak, yenilenebilir enerji kaynaklarını tercih etmek gibi çeşitli önlemler alarak çevresel sürdürülebilirliği destekliyoruz."
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
     },
     {
-      "title": "Sustainability",
-      "img": "/img/sustainability-img3.jpg",
-      "text": "Ekonomik olarak sürdürülebilir bir işletme olmak da önemli bir hedefimizdir. Uzun vadeli büyüme ve istikrarlı bir mali performans için sağlam bir temel oluşturuyoruz. Etik iş uygulamalarına bağlı kalıyoruz ve şeffaf yönetim prensipleriyle işletmemizi yönetiyoruz. Çalışanlarımıza adil ve eşitlikçi bir çalışma ortamı sağlamak, onların yeteneklerini geliştirmelerine ve katkıda bulunmalarına olanak tanımak da ekonomik sürdürülebilirliğimizin bir parçasıdır."
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
     },
     {
-      "title": "Sustainability",
-      "img": "/img/sustainability-img4.jpg",
-      "text": "Sosyal sorumluluklarımızı da önemsiyoruz ve toplumda pozitif bir etki yaratmaya çalışıyoruz. Çalışanlarımızın sağlık, güvenlik ve refahını ön planda tutuyoruz. Yerel topluluklarla işbirliği yapıyor, eğitim, sağlık, çevre koruması gibi alanlarda projeler destekliyoruz. Ayrıca tedarik zincirimizin sürdürülebilirlik standartlarına uygun olduğundan emin olmak için tedarikçilerimizle işbirliği yapıyoruz.  Globia olarak, sürdürülebilirlikle ilgili hedeflerimize ulaşmak için sürekli olarak kendimizi geliştirmeye devam ediyoruz. Sürdürülebilirlik prensiplerini iş stratejimizin merkezine yerleştiriyoruz ve paydaşlarımızla işbirliği yaparak daha iyi bir gelecek için çalışıyoruz."
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
     }
   ],
-  "Media": [
+  "Team": [
     {
-      "title": "Kadın Çiftçilere Destek",
-      "description": "Kadın çiftçiler, tarım sektöründe önemli bir rol oynamaktadır. Bu blog yazısında, kadın çiftçilere destek verme yöntemlerini ve sağlanan avantajları ele alacağız. Kadın çiftçilerin karşılaştığı zorluklar ve bu zorluklarla nasıl başa çıktıkları hakkında bilgi vereceğiz.",
-      "img": "/img/blog/women-farmer-support.jpg",
-      "date": "05.03.2022"
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
   ]
 }

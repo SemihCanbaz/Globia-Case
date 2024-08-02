@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 import "../App.css";
@@ -12,6 +13,10 @@ export const Navigation = () => {
     window.scrollTo(0, 0); // Sayfanın en üstüne kaydır
   };
 
+=======
+
+export const Navigation = (props) => {
+>>>>>>> parent of eb51822 (Last-Design)
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -27,6 +32,7 @@ export const Navigation = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
+<<<<<<< HEAD
           <Link
             className="navbar-brand page-scroll"
             to="/"
@@ -36,6 +42,11 @@ export const Navigation = () => {
               <span className="logo-text">GLOBIA</span>
             </div>
           </Link>
+=======
+          <a className="navbar-brand page-scroll" href="#page-top">
+            React Landing Page
+          </a>{" "}
+>>>>>>> parent of eb51822 (Last-Design)
         </div>
 
         <div
@@ -43,6 +54,7 @@ export const Navigation = () => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
+<<<<<<< HEAD
             <li className="dropdown">
               <a
                 href="#get-to-know-us"
@@ -50,6 +62,11 @@ export const Navigation = () => {
                 data-toggle="dropdown"
               >
                 Get to Know Us <span className="caret"></span>
+=======
+            <li>
+              <a href="#features" className="page-scroll">
+                Features
+>>>>>>> parent of eb51822 (Last-Design)
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -75,18 +92,23 @@ export const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href="#products" className="page-scroll">
-                Products
+              <a href="#portfolio" className="page-scroll">
+                Gallery
               </a>
             </li>
             <li>
+<<<<<<< HEAD
               <a href="#sustainability" className="page-scroll">
                 Sustainability
+=======
+              <a href="#testimonials" className="page-scroll">
+                Testimonials
+>>>>>>> parent of eb51822 (Last-Design)
               </a>
             </li>
             <li>
-              <a href="#media" className="page-scroll">
-                Media
+              <a href="#team" className="page-scroll">
+                Team
               </a>
             </li>
             <li>

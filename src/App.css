@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Logo konteyneri */
 .logo-container {
   display: flex;
@@ -694,19 +695,16 @@
 }
 
 /* Services İçin Responsive Ayarlar */
+=======
+>>>>>>> parent of eb51822 (Last-Design)
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
     width: 111%;
   }
-
   #about,
-  #services {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
+  #services,
+  #testimonials,
   #team,
   #footer {
     width: 111%;
@@ -715,6 +713,7 @@
   #portfolio {
     width: 110%;
   }
+<<<<<<< HEAD
 
   #services .service-desc {
     padding: 15px;
@@ -1193,6 +1192,8 @@
   #media .blog-date {
     font-size: 12px; /* Mobil için tarih font boyutu */
   }
+=======
+>>>>>>> parent of eb51822 (Last-Design)
 }
 /* Media için genel stiller */
 #media .blog-post {

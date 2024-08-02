@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import { Routes, Route, useLocation } from "react-router-dom";
+=======
+>>>>>>> parent of eb51822 (Last-Design)
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { GetToKnowUs } from "./components/GetToKnowUs";
+import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Products } from "./components/products";
-import { Sustainability } from "./components/Sustainability";
-import { Media } from "./components/media";
+import { Gallery } from "./components/gallery";
+import { Testimonials } from "./components/testimonials";
+import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -17,8 +20,11 @@ import CardHeader from "./components/CardHeader";
 import "./i18n";
 
 import "./App.css";
+<<<<<<< HEAD
 
 // Yeni bileşeni ekliyoruz
+=======
+>>>>>>> parent of eb51822 (Last-Design)
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -37,6 +43,7 @@ const App = () => {
   return (
     <div>
       <Navigation />
+<<<<<<< HEAD
       <Routes>
         <Route
           path="/"
@@ -58,6 +65,16 @@ const App = () => {
         <Route path="/values" element={<Values />} />
         <Route path="/globia-group" element={<GlobiaGroup />} />
       </Routes>
+=======
+      <Header data={landingPageData.Header} />
+      <Features data={landingPageData.Features} />
+      <About data={landingPageData.About} />
+      <Services data={landingPageData.Services} />
+      <Gallery data={landingPageData.Gallery} />
+      <Testimonials data={landingPageData.Testimonials} />
+      <Team data={landingPageData.Team} />
+      <Contact data={landingPageData.Contact} />
+>>>>>>> parent of eb51822 (Last-Design)
     </div>
   );
 };
