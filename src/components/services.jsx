@@ -4,15 +4,25 @@ import "../App.css";
 
 export const Services = (props) => {
   const [modalContent, setModalContent] = useState(null);
+  const [modalImage, setModalImage] = useState(null);
+  const [modalTitle, setModalTitle] = useState(null);
+  const [modalUrl, setModalUrl] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (content) => {
+  const openModal = (content, image, title, url) => {
     setModalContent(content);
+    setModalImage(image);
+    setModalTitle(title);
+    setModalUrl(url);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setModalContent(null);
+    setModalImage(null);
+    setModalTitle(null);
+    setModalUrl(null);
   };
 
   return (
@@ -36,9 +46,14 @@ export const Services = (props) => {
                     {d.img && (
                       <img src={d.img} alt={d.name} className="service-img" />
                     )}
-                    {d.icon && <i className={d.icon}></i>}
                     <h3>{d.name}</h3>
-                    <p onClick={() => openModal(d.text)}>{d.text}</p>
+                    <p>{d.text}</p>
+                    <button
+                      className="more-info"
+                      onClick={() => openModal(d.text, d.img, d.name, d.url)}
+                    >
+                      Daha Fazla Bilgi
+                    </button>
                   </div>
                 </div>
               ))
@@ -46,7 +61,14 @@ export const Services = (props) => {
         </div>
       </div>
 
-      <Modal isOpen={isModalOpen} onClose={closeModal} content={modalContent} />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        content={modalContent}
+        image={modalImage}
+        title={modalTitle}
+        url={modalUrl}
+      />
     </div>
   );
 };

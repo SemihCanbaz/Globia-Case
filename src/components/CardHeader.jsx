@@ -1,57 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
+import data from "../data/data.json";
 
 const CardHeader = () => {
   const navigate = useNavigate();
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    if (data && data.Cards) {
+      setCards(data.Cards);
+    }
+  }, []);
 
   const handleClick = (path) => {
     navigate(path);
   };
 
-  const cards = [
-    {
-      title: "Tüketiciler",
-      description:
-        "Dünyanın her yerindeki tüketicilerimizin daha sağlıklı, kaliteli ve lezzetli yiyecekler yiyebilmesi için tutkuyla çalışıyoruz.",
-      path: "/globia-group",
-      image: "img/card/tüketiciler.jpg",
-    },
-    {
-      title: "Müşteriler",
-      description:
-        "Sağlıklı, lezzetli ve sürdürülebilir ürünlerimizi tüketiciyle buluşturan toptancılar ve mağazalarla çalışıyoruz.",
-      path: "/globia-group",
-      image: "img/card/müşteriler.jpg",
-    },
-    {
-      title: "Şubeler ve Tedarikçiler",
-      description:
-        "Şubelerimiz ve tedarikçilerimizle samimi ve şeffaf ilişkiler sürdürür, karşılıklı saygı ve fayda temelinde uzun vadeli ilişkiler kurarız.",
-      path: "/globia-group",
-      image: "img/card/bayiler-tedarikçiler.jpg",
-    },
-    {
-      title: "Tedarikçiler",
-      description:
-        "Tüketicilerimizin memnuniyetinde önemli rol oynayan tedarikçilerimizle yoğun işbirliğine önem veriyoruz.",
-      path: "/globia-group",
-      image: "img/card/tedarikçiler.jpg",
-    },
-    {
-      title: "Çiftçi ve Üreticiler",
-      description:
-        "Ürünlerimizi sağlıklı ve sürdürülebilir bir gelecek için üretiyor, doğayla uyum içinde çalışan, gelecek nesilleri ön planda tutan bilinçli, duyarlı çiftçi ve üreticilerle çalışıyoruz.",
-      path: "/globia-group",
-      image: "img/card/çiftçi-üreticiler.jpg",
-    },
-  ];
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="card-header-container">
-      <div className="row">
+      <div className="row justify-content-center align-items-center">
         {cards.map((card, index) => (
-          <div className="col-md-2" key={index}>
+          <div
+            className="col-6 col-md-2 col-lg-2 col-xl-2 mb-2 d-flex align-items-center"
+            key={index}
+          >
             <div className="card" onClick={() => handleClick(card.path)}>
               <img src={card.image} alt={card.title} className="card-img-top" />
               <div className="card-body">
@@ -61,6 +41,19 @@ const CardHeader = () => {
             </div>
           </div>
         ))}
+        <div className="col-12 col-md-4 col-lg-2 col-xl-2 mb-2 d-flex align-items-center">
+          <div
+            className="feedback-card"
+            onClick={() => scrollToSection("contact")}
+          >
+            <div className="feedback-content">
+              <i className="bi bi-arrow-right-circle feedback-icon"></i>
+              <span className="feedback-text">
+                Bize geri dönüşlerinizi bildirin
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
